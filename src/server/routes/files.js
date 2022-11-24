@@ -38,7 +38,7 @@ async function files(req, res) {
     // eslint-disable-next-line no-shadow
     form.parse(req, (err, fields, files) => {
         let userIP = req.headers['x-forwarded-for'] || req.connection.remoteAddress || req.socket.remoteAddress || req.connection.socket.remoteAddress.split(',')[0]; userIP = userIP.split(',')[0];
-        if ('filename' in fields) fileName = fields.filename.toString();
+        if (fields.filename) fileName = fields.filename.toString();
 
         const authKey = fields.key;
         let usingUploader = false;

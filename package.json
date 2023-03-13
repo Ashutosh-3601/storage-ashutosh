@@ -5,7 +5,7 @@
   "type": "commonjs",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "ejs": "^3.1.2",
+    "ejs": "^3.1.9",
     "eris": "^0.17.1",
     "exif2": "^0.0.1",
     "express": "^4.16.4",
